@@ -1,6 +1,8 @@
 <?php
 
-// no setup required here
-// all taken care of in the au_widgets_framework
-// only thing here is views for the widget
-// start.php is required for the plugin skeleton however.
+function au_blog_widget_init() {
+  elgg_unregister_widget_type('blog');
+  elgg_register_widget_type('blog', elgg_echo('blog'), elgg_echo('blog:widget:description'), 'all,groups', TRUE);
+}
+
+elgg_register_event_handler('init', 'system', 'au_blog_widget_init');
