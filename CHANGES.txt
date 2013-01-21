@@ -2,6 +2,9 @@
 
 x.x:
 
+1.4 (01/21/2013):
+ - removed 'all' context specifier for widget
+
 1.3 (09/04/2012):
  - fix invalid link in group widget
 
